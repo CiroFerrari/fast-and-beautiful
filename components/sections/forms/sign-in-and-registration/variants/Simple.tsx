@@ -1,3 +1,5 @@
+import { SimpleProps } from "@/interfaces";
+
 /*
   This example requires some changes to your config:
   
@@ -12,7 +14,7 @@
   }
   ```
 */
-export default function Example() {
+export default function Simple({ logo, title, emailInput, passwordInput, submitButton, signUpContent }: SimpleProps) {
   return (
     <>
       {/*
@@ -31,7 +33,7 @@ export default function Example() {
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+            {title}
           </h2>
         </div>
 

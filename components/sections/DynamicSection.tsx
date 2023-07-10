@@ -1,3 +1,4 @@
+import { SignInAndRegistrationContainer } from "./forms/sign-in-and-registration/container/SignInAndRegistrationContainer";
 import HeroContainer from "./page-sections/hero-sections/container/HeroContainer";
 
 export const DynamicSection = ({ section }: any) => {
@@ -6,6 +7,9 @@ export const DynamicSection = ({ section }: any) => {
   switch (section) {
     case 'hero-section-simple-centered':
       return <HeroContainer section={section} />
+
+    case 'sign-in-and-registration-simple':
+      return <SignInAndRegistrationContainer section={section} />
 
     default:
       return null;
